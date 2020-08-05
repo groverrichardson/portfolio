@@ -1,0 +1,132 @@
+$primary-purple : #403271
+$secondary-purple : #6638F0
+$highlight-purple: #BE55FF
+$teal : #55FFB1
+$orange : #FF6C10
+$dark-blue : #225F80
+
+=mainCta
+    background-color: $teal
+    height: 48px
+    width: 227px
+    border: none
+    font-size: 14px 
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    text-transform: uppercase
+    color: $dark-blue
+
+=h1 
+    font-family: 'Montserrat', sans-serif
+    font-family: 'Source Code Pro', monospace
+
+=flexRow
+    display: flex
+    flex-direction: row
+
+=flexColumn
+    display: flex
+    flex-direction: column
+
+=featureImageHolder
+    width: 200px
+    height: 200px
+    background-color: lightgrey
+    text-align: center
+    margin: 0px
+
+=regularButton
+    font-size: 14px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 20px
+    padding-right: 20px
+    border: solid grey 2px
+    background: lightgrey
+    color: black
+    text-decoration: none
+
+=longButton
+    font-size: 14px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 20px
+    padding-right: 20px
+    border: solid grey 2px
+    background: lightgrey
+    color: black
+    text-decoration: none
+    width: -webkit-fill-available
+    text-align: center
+
+=smallIcon
+    background: grey
+    border-radius: 100px
+    padding: 11px
+    width: 20px
+    text-align: center
+
+body    
+    margin: 0px
+
+.header
+    +h1 
+    color: white
+    letter-spacing: -1px
+    font-size: 49px
+    letter-spacing: -2.4px
+    width: 500px
+    position: relative
+    z-index: 1
+
+.main-cta
+    +mainCta 
+
+.header-section
+    background: transparent linear-gradient(180deg, #453F8E 0%, #3A2047 100%) 0% 0% no-repeat padding-box
+    height: 799px
+    border: none
+
+.main-menu
+    +flexRow 
+    justify-content: space-between
+    padding-right: 50px
+    padding-left: 50px
+    padding-top: 32px    
+    
+.comma
+    color: $teal
+    margin: -15px
+
+.hero-copy-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.hero-copy
+    font-family: 'Open Sans', sans-serif
+    color: white
+    font-size: 16px
+    padding-top: 15px
+    padding-bottom: 15px
+
+.line-two
+    margin-left: 46px
+
+.first-parenthesis, .second-parenthesis
+    position: absolute
+    color: $highlight-purple
+    font-size: 114px
+    opacity: 0.27
+    z-index: -1
+
+.first-parenthesis
+    top: -43px
+    left: -27px
+
+.second-parenthesis
+    top: 15px
+    right: -3px
+
+.profile-shadow
+    opacity:
