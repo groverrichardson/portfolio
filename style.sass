@@ -4,6 +4,13 @@ $highlight-purple: #BE55FF
 $teal : #55FFB1
 $orange : #FF6C10
 $dark-blue : #225F80
+$light-blue : #3DB4F4
+
+//Breakpoints
+$mobile : 375px
+$default: 1280px
+$tablet: 900px
+$xl: 1425px
 
 =mainCta
     background-color: $teal
@@ -13,12 +20,18 @@ $dark-blue : #225F80
     font-size: 14px 
     font-family: 'Montserrat', sans-serif
     font-weight: bold
-    text-transform: uppercase
+    text-transform: uppercase-box
     color: $dark-blue
+    z-index: 5
 
-=h1 
+=montserrat
     font-family: 'Montserrat', sans-serif
+
+=source-code 
     font-family: 'Source Code Pro', monospace
+
+=open-sans
+    font-family: 'Open Sans', sans-serif
 
 =flexRow
     display: flex
@@ -66,11 +79,15 @@ $dark-blue : #225F80
     width: 20px
     text-align: center
 
-body    
+body 
     margin: 0px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
 
 .header
-    +h1 
+    +source-code 
     color: white
     letter-spacing: -1px
     font-size: 49px
@@ -78,14 +95,21 @@ body
     width: 500px
     position: relative
     z-index: 1
+    @media screen and (max-width: 650px)
+        font-size: 39px
+        text-align: center
 
 .main-cta
     +mainCta 
 
 .header-section
     background: transparent linear-gradient(180deg, #453F8E 0%, #3A2047 100%) 0% 0% no-repeat padding-box
-    height: 799px
+    height: 699px
     border: none
+    position: relative
+    width: -webkit-fill-available
+    @media screen and (max-width: $default)
+        height: 1000px
 
 .main-menu
     +flexRow 
@@ -101,14 +125,27 @@ body
 .hero-copy-container
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: flex-start
+    position: absolute
+    left: 10vw
+    width: 500px
+    @media screen and (max-width: $default)
+        position: unset
+        align-items: center
+        justify-content: center
 
 .hero-copy
-    font-family: 'Open Sans', sans-serif
+    +open-sans
     color: white
     font-size: 16px
-    padding-top: 15px
+    padding-top: 0px
     padding-bottom: 15px
+    width: 320px
+    align-self: flex-start
+    margin-top: 0px
+    @media screen and (max-width: $default)
+        text-align: center
+        align-self: unset
 
 .line-two
     margin-left: 46px
@@ -119,14 +156,490 @@ body
     font-size: 114px
     opacity: 0.27
     z-index: -1
+    @media screen and (max-width: 650px)
+        font-size: 90px
 
 .first-parenthesis
     top: -43px
     left: -27px
+    @media screen and (max-width: 650px)
+        top: -37px
+        left: 45px
 
 .second-parenthesis
     top: 15px
     right: -3px
+    @media screen and (max-width: 650px)
+        top: 10px
+        right: 42px
 
 .profile-shadow
     opacity:
+
+.social-icons
+    width: 70px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 25px
+
+.hero-section
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    height: 555px
+    max-width: 1280px
+
+.profile-img-container
+    display: flex
+    flex-direction: row
+    position: absolute
+    right: 10vw
+    bottom: 0
+    @media screen and (max-width: $default)
+        right: unset
+
+.fab
+    color: white
+
+.profile-img
+    position: relative
+    z-index: 5
+
+.profile
+    @media screen and (max-width: $default)
+        height: 406px
+
+.second-img
+    position: absolute
+    right: -27px
+    z-index: 3
+    opacity: .4
+    mix-blend-mode: luminosity
+
+.third-img
+    position: absolute
+    right: -53px
+    z-index: 0
+    opacity: 1
+    color: white
+    mix-blend-mode: screen
+
+.bkg-circle
+    background-color: white
+    width: 724px
+    height: 724px
+    position: absolute
+    @media screen and (max-width: $default)
+        width: 400px 
+        height: 400px
+        top: 5
+
+.circle-one
+    top: 0px
+    border-radius: 100%
+    opacity: .02
+    @media screen and (max-width: $default)
+        left: 20vw
+        top: 10vw
+    @media screen and (max-width: $tablet)
+        left: 5vw
+    @media screen and (max-width: 650px)
+        left: 1vw
+
+.circle-two
+    top: 0
+    border-radius: 100%
+    opacity: .16
+    right: 0px
+    @media screen and (max-width: $default)
+        right: 20vw
+        top: 10vw
+    @media screen and (max-width: $tablet)
+        right: 5vw
+    @media screen and (max-width: 650px)
+        right: 1vw
+
+h2
+    +source-code
+    letter-spacing: -1px
+
+.bio-header
+    width: 771px
+    @media screen and ( max-width: $default )
+        width: unset
+
+.bio-section-container
+    display: flex
+    flex-direction: column
+    margin-top: 75px
+    justify-content: center
+    align-items: center
+    margin-right: 20vw
+    margin-left: 20vw
+    margin-bottom: 75px
+    position: relative
+    @media screen and ( max-width: $default )
+        margin-right: 10vw
+        margin-left: 10vw
+
+.bio-header
+    font-size: 35px
+    text-align: center
+    letter-spacing: -1px
+    margin-bottom: 21px
+    position: relative
+
+.bio-description
+    font-size: 18px
+    text-align: center
+    line-height: 1.5em
+    +open-sans
+
+.bio-circle
+    border: black 2px solid
+    height: 31px
+    position: absolute
+    width: 231px
+    border-radius: 100%
+    opacity: .4
+
+.bio-cir-one
+    right: -5px
+    height: 77px
+    top: -17px
+    border-color: $teal
+    transform: rotate(2deg)
+    @media screen and ( max-width: $default )
+        right: 18px
+    @media screen and ( max-width: $tablet )
+        right: 0px
+
+.bio-cir-two
+    top: -11px
+    right: 8px
+    height: 60px
+    transform: rotate(3deg)
+    border-color: $highlight-purple
+    @media screen and ( max-width: $default )
+        right: 27px
+    @media screen and ( max-width: $tablet )
+        right: 0px
+
+.by-experience, .at-heart
+    color: $primary-purple
+
+.by-experience
+    position: relative
+
+.developer
+    color: $secondary-purple
+
+.experience-container, .skills-container
+    margin-right: 10vw
+    margin-left: 10vw
+    display: flex
+    flex-direction: column
+    position: relative
+    margin-top: 0px
+
+.work-container
+    display: flex
+    flex-direction: column
+    margin-left: 10vw
+    margin-right: 10vw
+    margin-bottom: 75px
+
+.project-container
+    display: flex
+    flex-direction: column
+    width: 446px
+    @media screen and ( max-width: $default )
+        margin-right: unset
+        width: unset
+        margin-bottom: 50px
+        max-width: 400px
+
+.project-title
+    +source-code
+    letter-spacing: -1px
+    font-size: 1.2em
+    margin-top: 40px
+    margin-bottom: 0px
+    word-spacing: -4px
+
+.projects-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    @media screen and ( max-width: $default )
+        flex-direction: column
+        max-width: 400px
+
+.experience-header, .skills-header, .work-header
+    margin-left: 2.5vw
+    margin-bottom: 20px
+
+.skill
+    min-height: 249px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 330px
+
+.skill-logo
+    max-height: 50px
+    min-width: auto
+    margin-left: 10px
+
+.fa-react
+    font-size: 50px
+    color: #60DAFB
+
+.skill-logo-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 15px
+    margin-block-start: auto
+
+.skill-title
+    font-size: 24px
+    +source-code
+    letter-spacing: -1px
+    margin-top: 10px
+    margin-bottom: 0px
+
+.skill-description
+    margin-top: 25px
+    margin-bottom: 25px
+    justify-self: flex-start
+
+.skill-title-one
+    color: $secondary-purple
+
+.skill-title-two
+    color: $orange
+
+.skill-title-three
+    color: $light-blue
+
+.exp-cir-one
+    border-radius: 100%
+    border: $secondary-purple 1px solid
+    position: absolute
+    opacity: .25
+    left: 1px
+    top: -49px
+    height: 300px
+    width: 300px
+    z-index: 1
+
+.exp-cir-two
+    border-radius: 100%
+    border: $secondary-purple 1px solid
+    position: absolute
+    opacity: .25
+    top: -42px
+    left: 251px
+    height: 150px
+    width: 150px
+    z-index: 0
+
+.job-container, .skill-container
+    display: flex
+    flex-direction: row
+    margin-bottom: 75px
+    overflow-x: revert
+    justify-content: space-between
+    align-items: center
+    max-width: 90vw
+    @media screen and (max-width: $default)
+        flex-direction: column
+
+.skill-container
+    align-items: flex-start
+    position: relative
+
+.skill-cir-one
+    border-radius: 100%
+    border: 1px $secondary-purple solid
+    height: 150px
+    width: 150px
+    opacity: .25
+    position: absolute
+    right: 410px
+
+.skill-cir-two
+    border-radius: 100%
+    border: 1px $secondary-purple solid
+    height: 250px
+    width: 250px
+    opacity: .25
+    position: absolute
+    right: 210px
+    top: -30px
+
+.project-image
+    width: 446px
+    height: auto
+    @media screen and ( max-width: $default )
+        width: unset
+        align-self: center
+
+.info-box
+    width: 258px
+    border-radius: 50px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 35px
+    padding-right: 35px
+    z-index: 5
+    position: relative
+    background-color: white
+    min-width: 300px
+    min-height: 298px
+
+.info-box-one
+    border: $secondary-purple 1px solid
+    box-shadow: 5px 7px $secondary-purple
+
+.info-box-two
+    border: $orange 1px solid
+    box-shadow: 5px 7px $orange
+    margin-right: 25px
+    margin-left: 25px
+    @media screen and (max-width: $default)
+        margin-right: unset
+        margin-left: unset
+        margin-top: 50px
+        margin-bottom: 50px
+
+.info-box-three
+    border: $light-blue 1px solid
+    box-shadow: 5px 7px $light-blue
+
+.company-name
+    font-size: 16px
+    margin-bottom: 0px  
+    +source-code 
+    letter-spacing: -1px
+
+.title
+    font-size: 18px
+    margin-top: 5px   
+    margin-bottom: 5px 
+    +source-code 
+    letter-spacing: -1px
+
+
+.year
+    font-size: 16px
+    margin-top: 0px 
+    +source-code
+    color: #797979
+
+.accomplishments
+    font-size: 21px
+    margin-bottom: 12px
+    margin-top: 12px
+    +source-code
+
+ul
+    list-style: none
+    padding: 0px
+
+li
+    margin-bottom: 10px
+    font-size: 16px
+    +open-sans
+    line-height: 20px
+    margin-bottom: 20px
+
+.skill-description, .project-description
+    +open-sans 
+    font-size: 16px
+    line-height: 1.5em
+
+.project-description
+    @media screen and ( max-width: $default )
+        max-width: 400px
+
+.title-one
+    color: $secondary-purple
+
+.title-two
+    color: $orange
+
+.title-three
+    color: $light-blue
+
+.overlay
+    height: 221px
+    width: 446px
+    background-color: $primary-purple
+    position: absolute
+    mix-blend-mode: color
+    @media screen and ( max-width: $default )
+        width: unset
+        max-width: 400px
+
+.github-button   
+   background-color: $light-blue
+   color: $dark-blue 
+   border: none
+   padding: 15px
+   +montserrat
+   text-transform: uppercase
+   font-size: 14px
+   margin-right: 15px
+
+.live-button
+   border: none
+   padding: 15px
+   +montserrat
+   text-transform: uppercase
+   font-size: 14px
+   background-color: $secondary-purple
+   color: $teal
+
+.contact-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-right: 10vw
+    margin-left: 10vw
+    margin-bottom: 75px
+    max-width: 1000px
+
+.contact-copy
+    margin-left: 10vw
+    margin-right: 10vw
+    margin-bottom: 25px
+    margin-top: 25px
+    text-align: center
+    +open-sans
+    line-height: 1.5em
+
+.contact-header
+    margin-bottom: 0px
+    font-size: 35px
+    letter-spacing: -1px
+
+footer
+    color: black
+    display: flex
+    justify-content: center
+    align-items: center
+    +open-sans
+    margin-bottom: 75px
+    font-weight: 700
+
+.project-one
+    margin-right: 25px
+    @media screen and ( max-width: $default )
+        margin-right: unset
+    
