@@ -9,9 +9,10 @@ $light-blue : #3DB4F4
 //Breakpoints
 $mobile : 375px
 $lgmobile: 416px
-$default: 1280px
+$default: 1000px
 $tablet: 900px
-$xl: 1425px
+$xl : 1425px
+$xxl: 1730px
 
 =mainCta
     background-color: $teal
@@ -119,6 +120,14 @@ body
     overflow-x: hidden
     @media screen and (max-width: $default)
         height: 1000px
+    @media screen and ( min-width: $xl )
+        position: unset
+    @media screen and ( min-width: $default )
+        overflow-x: unset
+
+.wrapper
+    @media screen and ( max-width: $lgmobile )
+        width: 100%
 
 .main-menu
     +flexRow 
@@ -148,6 +157,8 @@ body
         position: unset
         align-items: center
         justify-content: center
+    @media screen and ( min-width: $xl )
+        position: relative
 
 .hero-copy
     +open-sans
@@ -158,6 +169,7 @@ body
     width: 320px
     align-self: flex-start
     margin-top: 0px
+    line-height: 1.5em
     @media screen and (max-width: $default)
         text-align: center
         align-self: unset
@@ -211,17 +223,22 @@ body
     align-items: center
     height: 555px
     max-width: 1280px
+    @media screen and ( min-width: $xl )
+        max-width: unset
 
 .profile-img-container
     display: flex
     flex-direction: row
     position: absolute
     right: 10vw
-    bottom: 0
+    bottom: 0vw
     @media screen and ( max-width: $tablet )
         right: unset
     @media screen and ( max-width: $default )
         right: unset
+    @media screen and ( min-width: $xl )
+        position: relative
+        margin-left: 230px
 
 .fab
     color: white
@@ -356,6 +373,17 @@ h2
         right: 18px
     @media screen and ( max-width: $lgmobile )
         right: 5px
+    @media screen and ( min-width: $lgmobile )
+        right: 26px
+        top: 26px
+    @media screen and ( min-width: 525px )
+        right: 135px
+    @media screen and ( min-width: 600px )
+        right: 160px
+    @media screen and ( min-width: 750px )
+        left: 45px
+        right: unset
+        top: -15px
     @media screen and ( max-width: $mobile )
         right: 15px
 
@@ -371,6 +399,17 @@ h2
         right: 0px
     @media screen and ( max-width: $lgmobile )
         right: 5px
+    @media screen and ( min-width: $lgmobile )
+        right: 26px
+        top: 35px
+    @media screen and ( min-width: 525px )
+        right: 130px
+    @media screen and ( min-width: 600px )
+        right: 155px
+    @media screen and ( min-width: 750px )
+        left: 45px
+        right: unset
+        top: -7px
     @media screen and ( max-width: $mobile )
         right: 25px
 
@@ -391,12 +430,20 @@ h2
     position: relative
     margin-top: 0px
 
+.experience-container
+    @media screen and ( max-width: $lgmobile )
+        margin-top: -25px
+
 .work-container
     display: flex
     flex-direction: column
     margin-left: 10vw
     margin-right: 10vw
-    margin-bottom: 75px
+    margin-bottom: 50px
+
+.work-button-container
+    @media screen and ( max-width: $lgmobile )
+        margin-left: 2.5vw
 
 .project-container
     display: flex
@@ -415,6 +462,8 @@ h2
     margin-top: 40px
     margin-bottom: 0px
     word-spacing: -4px
+    @media screen and ( max-width: $lgmobile )
+        margin-left: 2.5vw
 
 .projects-container
     display: flex
@@ -483,6 +532,8 @@ h2
     height: 300px
     width: 300px
     z-index: 1
+    @media screen and ( max-width: $lgmobile )
+        display: none
 
 .exp-cir-two
     border-radius: 100%
@@ -494,17 +545,20 @@ h2
     height: 150px
     width: 150px
     z-index: 0
+    @media screen and ( max-width: $lgmobile )
+        display: none
 
 .job-container, .skill-container
     display: flex
     flex-direction: row
-    margin-bottom: 75px
+    margin-bottom: 50px
     overflow-x: revert
     justify-content: space-between
     align-items: center
     max-width: 90vw
     @media screen and (max-width: $default)
         flex-direction: column
+        
 
 .skill-container
     align-items: flex-start
@@ -621,6 +675,8 @@ li
 .project-description
     @media screen and ( max-width: $default )
         max-width: 400px
+    @media screen and ( max-width: $lgmobile )
+        margin-left: 2.5vw
 
 .title-one
     color: $secondary-purple
@@ -689,6 +745,7 @@ li
     margin-bottom: 0px
     font-size: 35px
     letter-spacing: -1px
+    margin-top: 0px
 
 footer
     color: black
