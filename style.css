@@ -15,6 +15,13 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 416px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
 .header {
   font-family: 'Source Code Pro', monospace;
   color: white;
@@ -30,6 +37,13 @@ body {
   .header {
     font-size: 39px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .header {
+    font-size: 32px;
+    margin-left: -20px;
   }
 }
 
@@ -53,6 +67,7 @@ body {
   border: none;
   position: relative;
   width: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1280px) {
@@ -77,9 +92,22 @@ body {
   padding-top: 32px;
 }
 
+@media screen and (max-width: 416px) {
+  .main-menu {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+
 .comma {
   color: #55FFB1;
   margin: -15px;
+}
+
+@media screen and (max-width: 416px) {
+  .comma {
+    margin: -10px;
+  }
 }
 
 .hero-copy-container {
@@ -161,6 +189,13 @@ body {
   }
 }
 
+@media screen and (max-width: 416px) {
+  .first-parenthesis {
+    top: -37px;
+    left: 87px;
+  }
+}
+
 .second-parenthesis {
   top: 15px;
   right: -3px;
@@ -170,6 +205,13 @@ body {
   .second-parenthesis {
     top: 10px;
     right: 42px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .second-parenthesis {
+    top: 0px;
+    right: 70px;
   }
 }
 
@@ -217,6 +259,12 @@ body {
   position: absolute;
   right: 10vw;
   bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .profile-img-container {
+    right: unset;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -268,7 +316,7 @@ body {
   .bkg-circle {
     width: 400px;
     height: 400px;
-    top: 5;
+    top: unset;
   }
 }
 
@@ -281,19 +329,32 @@ body {
 @media screen and (max-width: 1280px) {
   .circle-one {
     left: 20vw;
-    top: 10vw;
+    top: unset;
+    bottom: 0vw;
   }
 }
 
 @media screen and (max-width: 900px) {
   .circle-one {
     left: 5vw;
+    top: unset;
+    bottom: 0vw;
   }
 }
 
 @media screen and (max-width: 650px) {
   .circle-one {
     left: 1vw;
+    top: unset;
+    bottom: 0vw;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .circle-one {
+    left: 40vw;
+    bottom: 0vw;
+    top: unset;
   }
 }
 
@@ -307,19 +368,32 @@ body {
 @media screen and (max-width: 1280px) {
   .circle-two {
     right: 20vw;
-    top: 10vw;
+    top: unset;
+    bottom: 0vw;
   }
 }
 
 @media screen and (max-width: 900px) {
   .circle-two {
     right: 5vw;
+    bottom: 0vw;
+    top: unset;
   }
 }
 
 @media screen and (max-width: 650px) {
   .circle-two {
     right: 1vw;
+    top: unset;
+    bottom: 0vw;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .circle-two {
+    right: 50vw;
+    bottom: 0vw;
+    top: unset;
   }
 }
 
@@ -405,9 +479,15 @@ h2 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 416px) {
   .bio-cir-one {
-    right: 0px;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bio-cir-one {
+    right: 15px;
   }
 }
 
@@ -429,6 +509,18 @@ h2 {
 @media screen and (max-width: 900px) {
   .bio-cir-two {
     right: 0px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .bio-cir-two {
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bio-cir-two {
+    right: 25px;
   }
 }
 
@@ -686,10 +778,17 @@ h2 {
 
 @media screen and (max-width: 1280px) {
   .project-image {
-    width: unset;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    width: 400px;
+    height: 198px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .project-image {
+    width: 325px;
+    height: 161.405px;
+    overflow: hidden;
   }
 }
 
@@ -705,6 +804,13 @@ h2 {
   background-color: white;
   min-width: 300px;
   min-height: 298px;
+}
+
+@media screen and (max-width: 416px) {
+  .info-box {
+    min-width: unset;
+    width: 248px;
+  }
 }
 
 .info-box-one {
@@ -812,8 +918,15 @@ li {
 
 @media screen and (max-width: 1280px) {
   .overlay {
-    width: unset;
-    max-width: 400px;
+    width: 400px;
+    height: 198px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .overlay {
+    width: 325px;
+    height: 161.405px;
   }
 }
 
@@ -866,6 +979,13 @@ li {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5em;
+}
+
+@media screen and (max-width: 416px) {
+  .contact-copy {
+    margin-left: unset;
+    margin-right: unset;
+  }
 }
 
 .contact-header {

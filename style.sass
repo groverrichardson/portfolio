@@ -8,6 +8,7 @@ $light-blue : #3DB4F4
 
 //Breakpoints
 $mobile : 375px
+$lgmobile: 416px
 $default: 1280px
 $tablet: 900px
 $xl: 1425px
@@ -85,6 +86,9 @@ body
     flex-direction: column
     justify-content: center
     align-items: center
+    @media screen and ( max-width: $lgmobile )
+        width: 100%
+        overflow-x: hidden
 
 .header
     +source-code 
@@ -98,6 +102,10 @@ body
     @media screen and (max-width: 650px)
         font-size: 39px
         text-align: center
+    @media screen and ( max-width: $lgmobile )
+        font-size: 32px
+        margin-left: -20px
+
 
 .main-cta
     +mainCta 
@@ -108,6 +116,7 @@ body
     border: none
     position: relative
     width: -webkit-fill-available
+    overflow-x: hidden
     @media screen and (max-width: $default)
         height: 1000px
 
@@ -116,11 +125,17 @@ body
     justify-content: space-between
     padding-right: 50px
     padding-left: 50px
-    padding-top: 32px    
+    padding-top: 32px   
+    @media screen and ( max-width: $lgmobile )
+        padding-right: 5vw
+        padding-left: 5vw 
+        
     
 .comma
     color: $teal
     margin: -15px
+    @media screen and ( max-width: $lgmobile )
+        margin: -10px
 
 .hero-copy-container
     display: flex
@@ -165,6 +180,9 @@ body
     @media screen and (max-width: 650px)
         top: -37px
         left: 45px
+    @media screen and ( max-width: $lgmobile )
+        top: -37px  
+        left: 87px
 
 .second-parenthesis
     top: 15px
@@ -172,6 +190,9 @@ body
     @media screen and (max-width: 650px)
         top: 10px
         right: 42px
+    @media screen and ( max-width: $lgmobile )
+        top: 0px
+        right: 70px
 
 .profile-shadow
     opacity:
@@ -197,7 +218,9 @@ body
     position: absolute
     right: 10vw
     bottom: 0
-    @media screen and (max-width: $default)
+    @media screen and ( max-width: $tablet )
+        right: unset
+    @media screen and ( max-width: $default )
         right: unset
 
 .fab
@@ -234,7 +257,7 @@ body
     @media screen and (max-width: $default)
         width: 400px 
         height: 400px
-        top: 5
+        top: unset
 
 .circle-one
     top: 0px
@@ -242,11 +265,20 @@ body
     opacity: .02
     @media screen and (max-width: $default)
         left: 20vw
-        top: 10vw
+        top: unset
+        bottom: 0vw
     @media screen and (max-width: $tablet)
         left: 5vw
+        top: unset
+        bottom: 0vw
     @media screen and (max-width: 650px)
         left: 1vw
+        top: unset
+        bottom: 0vw
+    @media screen and ( max-width: $lgmobile )
+        left: 40vw
+        bottom: 0vw
+        top: unset
 
 .circle-two
     top: 0
@@ -255,11 +287,20 @@ body
     right: 0px
     @media screen and (max-width: $default)
         right: 20vw
-        top: 10vw
+        top: unset
+        bottom: 0vw
     @media screen and (max-width: $tablet)
         right: 5vw
+        bottom: 0vw
+        top: unset
     @media screen and (max-width: 650px)
         right: 1vw
+        top: unset
+        bottom: 0vw
+    @media screen and ( max-width: $lgmobile )
+        right: 50vw
+        bottom: 0vw
+        top: unset
 
 h2
     +source-code
@@ -313,8 +354,10 @@ h2
     transform: rotate(2deg)
     @media screen and ( max-width: $default )
         right: 18px
-    @media screen and ( max-width: $tablet )
-        right: 0px
+    @media screen and ( max-width: $lgmobile )
+        right: 5px
+    @media screen and ( max-width: $mobile )
+        right: 15px
 
 .bio-cir-two
     top: -11px
@@ -326,6 +369,10 @@ h2
         right: 27px
     @media screen and ( max-width: $tablet )
         right: 0px
+    @media screen and ( max-width: $lgmobile )
+        right: 5px
+    @media screen and ( max-width: $mobile )
+        right: 25px
 
 .by-experience, .at-heart
     color: $primary-purple
@@ -486,8 +533,13 @@ h2
     width: 446px
     height: auto
     @media screen and ( max-width: $default )
-        width: unset
-        align-self: center
+        width: 400px
+        height: 198px
+        overflow: hidden
+    @media screen and ( max-width: $lgmobile )
+        width: 325px
+        height: 161.405px
+        overflow: hidden
 
 .info-box
     width: 258px
@@ -501,6 +553,9 @@ h2
     background-color: white
     min-width: 300px
     min-height: 298px
+    @media screen and ( max-width: $lgmobile )
+        min-width: unset
+        width: 248px
 
 .info-box-one
     border: $secondary-purple 1px solid
@@ -583,8 +638,11 @@ li
     position: absolute
     mix-blend-mode: color
     @media screen and ( max-width: $default )
-        width: unset
-        max-width: 400px
+        width: 400px
+        height: 198px
+    @media screen and ( max-width: $lgmobile )
+        width: 325px
+        height: 161.405px
 
 .github-button   
    background-color: $light-blue
@@ -623,6 +681,9 @@ li
     text-align: center
     +open-sans
     line-height: 1.5em
+    @media screen and ( max-width: $lgmobile )
+        margin-left: unset
+        margin-right: unset
 
 .contact-header
     margin-bottom: 0px
