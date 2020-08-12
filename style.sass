@@ -25,6 +25,10 @@ $xxl: 1730px
     text-transform: uppercase-box
     color: $dark-blue
     z-index: 5
+    box-sizing: border-box
+    text-align: center
+    padding: 16px
+    text-decoration: none
 
 =montserrat
     font-family: 'Montserrat', sans-serif
@@ -107,6 +111,15 @@ body
         font-size: 32px
         margin-left: -20px
 
+.slash-one
+    color: $teal
+
+.slash-two
+    color: $secondary-purple
+    margin-left: -10px
+
+.slash
+    font-size: 34px
 
 .main-cta
     +mainCta 
@@ -122,6 +135,7 @@ body
         height: 1000px
     @media screen and ( min-width: $xl )
         position: unset
+        height: 687px
     @media screen and ( min-width: $default )
         overflow-x: unset
 
@@ -238,7 +252,7 @@ body
         right: unset
     @media screen and ( min-width: $xl )
         position: relative
-        margin-left: 230px
+        margin-left: 300px
 
 .fab
     color: white
@@ -490,7 +504,6 @@ h2
 .skill-logo
     max-height: 50px
     min-width: auto
-    margin-left: 10px
 
 .fa-react
     font-size: 50px
@@ -762,4 +775,8 @@ footer
     margin-right: 25px
     @media screen and ( max-width: $default )
         margin-right: unset
+
+.goat-logo
+    height: 50px
+    width: auto
     
