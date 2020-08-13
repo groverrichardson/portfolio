@@ -53,11 +53,11 @@ body {
 
 .slash-two {
   color: #6638F0;
-  margin-left: -10px;
+  margin-left: -8px;
 }
 
 .slash {
-  font-size: 34px;
+  font-size: 27px;
 }
 
 .main-cta {
@@ -1087,6 +1087,7 @@ li {
   text-transform: uppercase;
   font-size: 14px;
   margin-right: 15px;
+  text-decoration: none;
 }
 
 .live-button {
@@ -1097,6 +1098,7 @@ li {
   font-size: 14px;
   background-color: #6638F0;
   color: #55FFB1;
+  text-decoration: none;
 }
 
 .contact-container {
