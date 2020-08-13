@@ -254,8 +254,11 @@ body
         position: relative
         margin-left: 300px
 
-.fab
-    color: white
+.social
+    height: 30px
+    width: auto
+    position: relative
+    z-index: 10
 
 .profile-img
     position: relative
@@ -458,6 +461,7 @@ h2
     margin-bottom: 50px
 
 .work-button-container
+    margin-top: 15px
     @media screen and ( max-width: $lgmobile )
         margin-left: 2.5vw
 
@@ -601,6 +605,8 @@ h2
 .project-image
     width: 446px
     height: auto
+    max-height: 221px
+    overflow: hidden
     @media screen and ( max-width: $default )
         width: 400px
         height: 198px
@@ -609,6 +615,10 @@ h2
         width: 325px
         height: 161.405px
         overflow: hidden
+
+.to-do
+    border: $primary-purple 2px solid
+    box-sizing: border-box
 
 .info-box
     width: 258px

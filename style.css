@@ -330,8 +330,11 @@ body {
   }
 }
 
-.fab {
-  color: white;
+.social {
+  height: 30px;
+  width: auto;
+  position: relative;
+  z-index: 10;
 }
 
 .profile-img {
@@ -682,6 +685,10 @@ h2 {
   margin-bottom: 50px;
 }
 
+.work-button-container {
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 416px) {
   .work-button-container {
     margin-left: 2.5vw;
@@ -916,6 +923,8 @@ h2 {
 .project-image {
   width: 446px;
   height: auto;
+  max-height: 221px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {
@@ -932,6 +941,12 @@ h2 {
     height: 161.405px;
     overflow: hidden;
   }
+}
+
+.to-do {
+  border: #403271 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .info-box {
