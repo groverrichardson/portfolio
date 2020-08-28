@@ -260,7 +260,7 @@ body {
 }
 
 .social-icons {
-  width: 70px;
+  width: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,7 +576,7 @@ h2 {
 
 @media screen and (max-width: 375px) {
   .bio-cir-one {
-    right: 15px;
+    right: 5px;
   }
 }
 
@@ -636,7 +636,7 @@ h2 {
 
 @media screen and (max-width: 375px) {
   .bio-cir-two {
-    right: 25px;
+    right: 7px;
   }
 }
 
@@ -717,6 +717,7 @@ h2 {
 
 .project-title {
   font-family: 'Source Code Pro', monospace;
+  color: #6638F0;
   letter-spacing: -1px;
   font-size: 1.2em;
   margin-top: 40px;
@@ -728,6 +729,25 @@ h2 {
   .project-title {
     margin-left: 2.5vw;
   }
+}
+
+.technologies-header {
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: -1px;
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  word-spacing: -4px;
+}
+
+@media screen and (max-width: 416px) {
+  .technologies-header {
+    margin-left: 2.5vw;
+  }
+}
+
+.technologies-copy {
+  margin-bottom: 40px;
 }
 
 .projects-container {
@@ -1041,7 +1061,7 @@ li {
   margin-bottom: 20px;
 }
 
-.skill-description, .project-description {
+.skill-description, .project-description, .technologies-copy {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
@@ -1134,6 +1154,12 @@ li {
   margin-left: 10vw;
   margin-bottom: 75px;
   max-width: 1000px;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-container {
+    margin-top: 50px;
+  }
 }
 
 .contact-copy {
