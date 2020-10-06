@@ -58,6 +58,7 @@ body {
   .button {
     width: 80vw;
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -100,6 +101,12 @@ body {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 416px) {
+  .main-cta {
+    width: 90vw;
+  }
 }
 
 .header-section {
@@ -738,7 +745,12 @@ h2 {
 
 @media screen and (max-width: 416px) {
   .work-button-container {
-    margin-left: 2.5vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1172,6 +1184,12 @@ li {
   text-decoration: none;
 }
 
+@media screen and (max-width: 416px) {
+  .github-button {
+    margin-right: 0px;
+  }
+}
+
 .live-button {
   border: none;
   padding: 15px;
@@ -1247,6 +1265,7 @@ footer {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 75px;
   font-weight: 700;
+  text-align: center;
 }
 
 .project-one {
