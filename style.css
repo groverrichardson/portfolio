@@ -47,6 +47,30 @@ body {
   }
 }
 
+@media screen and (max-width: 374px) {
+  .header {
+    max-width: 90vw;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .button {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+}
+
+.technologies {
+  margin-left: 3vw;
+}
+
+.project-image, .overlay {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .slash-one {
   color: #55FFB1;
 }
@@ -88,7 +112,7 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .header-section {
     height: 1000px;
   }
@@ -101,7 +125,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .header-section {
     overflow-x: unset;
   }
@@ -163,7 +187,7 @@ body {
   width: 500px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .hero-copy-container {
     position: unset;
     -webkit-box-align: center;
@@ -194,12 +218,18 @@ body {
   line-height: 1.5em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .hero-copy {
     text-align: center;
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
         align-self: unset;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .hero-copy {
+    max-width: 90vw;
   }
 }
 
@@ -240,6 +270,12 @@ body {
   }
 }
 
+@media screen and (max-width: 374px) {
+  .first-parenthesis {
+    left: -3px;
+  }
+}
+
 .second-parenthesis {
   top: 15px;
   right: -3px;
@@ -256,6 +292,12 @@ body {
   .second-parenthesis {
     top: 0px;
     right: 70px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .second-parenthesis {
+    right: -18px;
   }
 }
 
@@ -317,7 +359,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .profile-img-container {
     right: unset;
   }
@@ -342,7 +384,7 @@ body {
   z-index: 5;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .profile {
     height: 406px;
   }
@@ -372,7 +414,7 @@ body {
   position: absolute;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .bkg-circle {
     width: 400px;
     height: 400px;
@@ -386,7 +428,7 @@ body {
   opacity: .02;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .circle-one {
     left: 20vw;
     top: unset;
@@ -425,7 +467,7 @@ body {
   right: 0px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .circle-two {
     right: 20vw;
     top: unset;
@@ -466,7 +508,7 @@ h2 {
   width: 771px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .bio-header {
     width: unset;
   }
@@ -493,7 +535,7 @@ h2 {
   position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .bio-section-container {
     margin-right: 10vw;
     margin-left: 10vw;
@@ -535,7 +577,7 @@ h2 {
           transform: rotate(2deg);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .bio-cir-one {
     right: 18px;
   }
@@ -589,7 +631,7 @@ h2 {
   border-color: #BE55FF;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .bio-cir-two {
     right: 27px;
   }
@@ -687,6 +729,11 @@ h2 {
 
 .work-button-container {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 
 @media screen and (max-width: 416px) {
@@ -706,7 +753,7 @@ h2 {
   width: 446px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .project-container {
     margin-right: unset;
     width: unset;
@@ -766,7 +813,7 @@ h2 {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .projects-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -903,7 +950,7 @@ h2 {
   max-width: 90vw;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .job-container, .skill-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -947,7 +994,7 @@ h2 {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .project-image {
     width: 400px;
     height: 198px;
@@ -1004,7 +1051,7 @@ h2 {
   margin-left: 25px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .info-box-two {
     margin-right: unset;
     margin-left: unset;
@@ -1067,7 +1114,7 @@ li {
   line-height: 1.5em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .project-description {
     max-width: 400px;
   }
@@ -1099,7 +1146,7 @@ li {
   mix-blend-mode: color;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .overlay {
     width: 400px;
     height: 198px;
@@ -1206,7 +1253,7 @@ footer {
   margin-right: 25px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .project-one {
     margin-right: unset;
   }

@@ -9,7 +9,7 @@ $light-blue : #3DB4F4
 //Breakpoints
 $mobile : 375px
 $lgmobile: 416px
-$default: 1000px
+$default: 1024px
 $tablet: 900px
 $xl : 1425px
 $xxl: 1730px
@@ -110,6 +110,20 @@ body
     @media screen and ( max-width: $lgmobile )
         font-size: 32px
         margin-left: -20px
+    @media screen and (max-width: 374px)
+        max-width: 90vw
+        font-size: 28px
+
+.button
+    @media screen and (max-width: $lgmobile)
+        width: 80vw
+        margin-bottom: 10px
+
+.technologies
+    margin-left: 3vw
+
+.project-image, .overlay
+    align-self: center
 
 .slash-one
     color: $teal
@@ -187,6 +201,8 @@ body
     @media screen and (max-width: $default)
         text-align: center
         align-self: unset
+    @media screen and (max-width: 374px)
+        max-width: 90vw
 
 .line-two
     margin-left: 46px
@@ -209,6 +225,8 @@ body
     @media screen and ( max-width: $lgmobile )
         top: -37px  
         left: 87px
+    @media screen and (max-width: 374px)
+        left: -3px
 
 .second-parenthesis
     top: 15px
@@ -219,6 +237,8 @@ body
     @media screen and ( max-width: $lgmobile )
         top: 0px
         right: 70px
+    @media screen and (max-width: 374px)
+        right: -18px
 
 .profile-shadow
     opacity:
@@ -462,6 +482,8 @@ h2
 
 .work-button-container
     margin-top: 15px
+    display: flex
+    flex-flow: wrap
     @media screen and ( max-width: $lgmobile )
         margin-left: 2.5vw
 
